@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BLACK THEME</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            card: '#000',
+            btn: '#3f4951',
+            accent: '#3de0c2'
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen grid place-items-center text-slate-100" 
+      style="background: radial-gradient(1200px 600px at 10% 10%, #f0f7ff 0%, #dfeeff 35%, #d8f0f0 100%)">
+  <main class="md:w-[min(980px)] grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-16 px-9 md:px-[16%]">
+
+    <section class="relative w-[min(360px,86vw)] rounded-[22px] p-6 pb-7 bg-card shadow-[0_18px_36px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.05)]" aria-live="polite">
+      <div id="screen" class="h-[84px] flex items-end justify-end text-[52px] font-medium tracking-[0.02em] text-slate-100 pb-0.5 pr-1 overflow-hidden whitespace-nowrap">0</div>
+
+       <div class="grid grid-cols-4 gap-4 mt-4">
+        <!-- First Row -->
+        <button class="h-16 rounded-2xl font-bold text-2xl font-semibold text-white bg-orange-600 shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-action="clear">AC</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl font-semibold text-[color:var(--accent)] bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-action="delete">DE</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl font-semibold text-[color:var(--accent)] bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-value=".">.</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl font-semibold text-[color:var(--accent)] bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-value="/">/</button>
+
+        <!-- Second Row -->
+        <button class="h-16 rounded-2xl font-bold font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="7">7</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="8">8</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="9">9</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl font-semibold text-[color:var(--accent)] bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-value="*">x</button>
+
+        <!-- Third Row -->
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="4">4</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="5">5</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="6">6</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl font-semibold text-[color:var(--accent)] bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-value="-">-</button>
+
+        <!-- Fourth Row -->
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="1">1</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="2">2</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="3">3</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl font-semibold text-[color:var(--accent)] bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-value="+">+</button>
+
+        <!-- Fifth Row -->
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="00">00</button>
+        <button class="h-16 rounded-2xl font-bold text-2xl bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" data-value="0">0</button>
+        <button class="col-span-2 h-16 rounded-2xl font-bold text-2xl font-semibold text-[color:var(--accent)] bg-btn shadow-[6px_6px_18px_rgba(0,0,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(255,255,255,0.03)]" style="--accent:#3de0c2" data-action="equals">=</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      const screen = document.getElementById('screen');
+      const keys = document.querySelector('[role="group"]'); // role attribute remove করলে selector আলাদা করতে হবে
+      const keysGrid = document.querySelector('.grid.grid-cols-4');
+
+      let expr = '';
+      let justEvaluated = false;
+
+      const render = () => { screen.textContent = expr.length ? expr : '0'; };
+
+      const append = (val) => {
+        if(justEvaluated && /[0-9.]/.test(val)) expr = '';
+        justEvaluated = false;
+        if(expr === '' && /[+\-*/]/.test(val)) return;
+        if(/[+\-*/]$/.test(expr) && /[+\-*/]/.test(val)) return;
+        if(expr === '0' && /\d/.test(val) && val !== '.') expr = '';
+        if(val === '.'){ const lastNum = expr.split(/[+\-*/]/).pop(); if(lastNum.includes('.')) return; }
+        expr += val;
+        render();
+      };
+
+      const clearAll = () => { expr = ''; render(); };
+      const del = () => { expr = expr.length > 1 ? expr.slice(0, -1) : ''; render(); };
+      const evaluate = () => {
+        try{
+          if(!expr) return;
+          if(/[+\-*/]$/.test(expr)) expr = expr.slice(0, -1);
+          const result = eval(expr);
+          expr = String(result);
+          justEvaluated = true;
+          render();
+        }catch(e){ screen.textContent = 'Error'; expr = ''; }
+      };
+
+      keysGrid.addEventListener('click', (e)=>{
+        const btn = e.target.closest('button');
+        if(!btn) return;
+        const val = btn.dataset.value;
+        const action = btn.dataset.action;
+        if(action === 'clear') return clearAll();
+        if(action === 'delete') return del();
+        if(action === 'equals') return evaluate();
+        if(val) return append(val);
+      });
+
+      window.addEventListener('keydown', (e)=>{
+        const k = e.key;
+        if(/^[0-9]$/.test(k)) return append(k);
+        if(k === '.') return append('.');
+        if(k === '+') return append('+');
+        if(k === '-') return append('-');
+        if(k === '*') return append('*');
+        if(k === '/') return append('/');
+        if(k === 'Enter' || k === '='){ e.preventDefault(); return evaluate(); }
+        if(k === 'Backspace') return del();
+        if(k.toLowerCase() === 'c' && (e.ctrlKey || e.metaKey)) return clearAll();
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
